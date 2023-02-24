@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </main>
 
-      <main className='bg-[#3662D2] w-full flex flex-1 items-center justify-center'>
+      <main className='bg-[#3662D2] w-full flex flex-1 flex-col items-center justify-center'>
         <div className='flex flex-col'>
           <Link
             href={'https://app.powerbi.com/view?r=eyJrIjoiYTg5OWNhNDItMTY2ZC00YTQ3LThlYWQtMGVkY2Q3OTNiMTkwIiwidCI6IjI2ZWY3ZmQyLTJhN2YtNDEzNS1hMmU0LWRlOWFjZjE2OGIyYSIsImMiOjF9&embedImagePlaceholder=true'}
@@ -90,6 +90,19 @@ export default function Home() {
               <p className='pl-2.5 text-lg'>Cursos VBG</p>
             </div>
           </button>
+        </div>
+
+        <div className='absolute bottom-0 grid grid-cols-2 bg-slate-50 font-bold'>
+          <div className='p-5 flex flex-1 items-center rounded'>
+            <p className=''>Tolerância Zero para a exploração e abuso sexual. Denuncie!</p> 
+          </div>
+          <div>
+            <h1>Ligue Mahala</h1>
+            <h2>84 9494 | 84 9393</h2>
+            <p>Vodacom | Mcel</p>
+            <h2>9 9393 | 9 9494</h2>
+            <p>Movitel</p>
+          </div>
         </div>
       </main>
     </div>
