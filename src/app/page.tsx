@@ -17,9 +17,11 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className='flex flex-row items-stretch w-full h-screen'>
-      <main className='max-w-3xl p-14  bg-[#3662D2]'>
+      <main className='bg-white max-w-3xl p-14 '>
+
+        <div>
         <Image src={logoImage} alt="" width={100} />
-        <h1 className='py-6 font-black text-white text-5xl'>Mecanismo de Gestão de Queixas, Reclamações <br />Projecto IFRDP</h1>
+        <h1 className='py-6 font-black text-black text-5xl'>Mecanismo de Gestão de Queixas e Reclamações</h1>
 
         <div className='flex flex-row items-center'>
           {/* <div className='flex flex-row items-center rounded w-80 bg-[#202024] p-4'>
@@ -32,22 +34,25 @@ export default function Home() {
           <Link
             href={'https://www.ane.gov.mz/'}
             rel="noopener noreferrer"
-            className='rounded bg-white p-4 h-[62px] w-[208px] m-3'
+            className='rounded bg-slate-800 text-white p-4 h-[62px] w-[208px] m-3'
             type="button">
             Pagina ANE
           </Link>
         </div>
 
-        <p className='text-xs font-normal text-[#C9C9C9] py-3 max-w-lg'>Esta pagina é exclusiva para ter acesso ao ponto de situacao das queixas ou reclamacoes que possam surgir por durante a implementacao deste projecto </p>
+        {/* <p className='text-xs font-normal text-[#767676] py-3 max-w-lg'>Esta pagina é exclusiva para ter acesso ao ponto de situacao das queixas ou reclamacoes que possam surgir por durante a implementacao deste projecto </p> */}
 
-        <div className='flex-1 flex flew-row justify-evenly items-end content-end h-1/3 '>
+        </div>
+
+        
+        <div className='flex-1 flex flew-row justify-evenly items-end content-end h-1/2 '>
           <Image src={anelogoImage} alt="" />
           <Image src={wblogoImage} alt="" />
           <Image src={jhpiegologoImage} alt="" />
         </div>
       </main>
 
-      <main className='bg-white w-full flex flex-1 items-center justify-center'>
+      <main className='bg-[#3662D2] w-full flex flex-1 items-center justify-center'>
         <div className='flex flex-col'>
           <Link
             href={'https://app.powerbi.com/view?r=eyJrIjoiYTg5OWNhNDItMTY2ZC00YTQ3LThlYWQtMGVkY2Q3OTNiMTkwIiwidCI6IjI2ZWY3ZmQyLTJhN2YtNDEzNS1hMmU0LWRlOWFjZjE2OGIyYSIsImMiOjF9&embedImagePlaceholder=true'}
