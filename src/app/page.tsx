@@ -1,91 +1,86 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import logoImage from '../assets/ifrdplogo.svg'
+import anelogoImage from '../assets/anelogo.svg'
+import jhpiegologoImage from '../assets/jhpiegologo.svg'
+import wblogoImage from '../assets/wblogo.svg'
+import learninglogoImage from '../assets/learninglogo.svg'
+import dashboardgoImage from '../assets/dashboardlogo.svg'
+import grievancelogoImage from '../assets/grievancelogo.svg'
+
+
+
+import phoneImage from '../assets/phone.png'
+import Link from 'next/link'
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
+    <div className='flex flex-row items-stretch w-full h-screen'>
+      <main className='max-w-3xl p-14  bg-[#3662D2]'>
+        <Image src={logoImage} alt="" width={100} />
+        <h1 className='py-6 font-black text-white text-5xl'>Mecanismo de Gestão de Queixas, Reclamações <br />Projecto IFRDP</h1>
+
+        <div className='flex flex-row items-center'>
+          {/* <div className='flex flex-row items-center rounded w-80 bg-[#202024] p-4'>
+            <Image src={phoneImage} alt="" />
+            <p className='pl-2.5'>
+              <span className='font-thin text-white'>CALL CENTER </span>
+              <strong className='font-black text-white'> | 99393 | 99494</strong>
+            </p>
+          </div> */}
+          <button className='rounded bg-white p-4 h-[62px] w-[208px] m-3' type="button">Pagina ANE</button>
+        </div>
+
+        <p className='text-xs font-normal text-[#C9C9C9] py-3 max-w-lg'>Esta pagina é exclusiva para ter acesso ao ponto de situacao das queixas ou reclamacoes que possam surgir por durante a implementacao deste projecto </p>
+
+        <div className='flex-1 flex flew-row justify-evenly items-end content-end h-1/3 '>
+          <Image src={anelogoImage} alt="" />
+          <Image src={wblogoImage} alt="" />
+          <Image src={jhpiegologoImage} alt="" />
+        </div>
+      </main>
+
+      <main className='bg-white w-full flex flex-1 items-center justify-center'>
+        <div className='flex flex-col'>
+          <Link
+            href={'https://app.powerbi.com/view?r=eyJrIjoiYTg5OWNhNDItMTY2ZC00YTQ3LThlYWQtMGVkY2Q3OTNiMTkwIiwidCI6IjI2ZWY3ZmQyLTJhN2YtNDEzNS1hMmU0LWRlOWFjZjE2OGIyYSIsImMiOjF9&embedImagePlaceholder=true'}
             rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            className='rounded bg-[#0E0E0F] p-4 h-[62px] w-96 m-3 text-white'>
+            <div className='flex flex-row items-center '>
+              <Image
+                src={dashboardgoImage}
+                alt="dash"
+                width={30}
+              />
+              <p className='pl-2.5 text-lg'>Visualizar Dashboard</p>
+            </div>
+          </Link>
+
+          <Link
+            href={'https://ee.humanitarianresponse.info/x/PrunVS3a/'}
+            className='rounded bg-[#4C4C4E] p-4 h-[62px] w-96 m-3 text-white'>
+            <div className='flex flex-row items-center '>
+              <Image
+                src={grievancelogoImage}
+                alt="dash"
+                width={30}
+              />
+              <p className='pl-2.5 text-lg'>Submeter Queixa</p>
+            </div>
+          </Link>
+          <button className='rounded bg-[#056839] p-4 h-[62px] w-96 m-3 text-white'>
+            <div className='flex flex-row items-center '>
+              <Image
+                src={learninglogoImage}
+                alt="dash"
+                width={30}
+              />
+              <p className='pl-2.5 text-lg'>Cursos VBG</p>
+            </div>
+          </button>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+    </div>
   )
 }
