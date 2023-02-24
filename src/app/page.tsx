@@ -29,7 +29,13 @@ export default function Home() {
               <strong className='font-black text-white'> | 99393 | 99494</strong>
             </p>
           </div> */}
-          <button className='rounded bg-white p-4 h-[62px] w-[208px] m-3' type="button">Pagina ANE</button>
+          <Link
+            href={'https://www.ane.gov.mz/'}
+            rel="noopener noreferrer"
+            className='rounded bg-white p-4 h-[62px] w-[208px] m-3'
+            type="button">
+            Pagina ANE
+          </Link>
         </div>
 
         <p className='text-xs font-normal text-[#C9C9C9] py-3 max-w-lg'>Esta pagina é exclusiva para ter acesso ao ponto de situacao das queixas ou reclamacoes que possam surgir por durante a implementacao deste projecto </p>
