@@ -87,7 +87,7 @@ export default function Home() {
                 alt="dash"
                 width={30}
               />
-              <p className='pl-2.5 text-lg'>Cursos VBG</p>
+              <p className='pl-2.5 text-lg'>Cursos de Salvaguarda Social/VBG</p>
             </div>
           </button>
         </div>
