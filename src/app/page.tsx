@@ -54,8 +54,20 @@ export default function Home() {
 
       <main className='bg-[#3662D2] w-full flex flex-1 flex-col items-center justify-center'>
         <div className='flex flex-col'>
+        <Link
+            href={'https://ee.humanitarianresponse.info/x/PrunVS3a/'}
+            className='rounded bg-[#4C4C4E] p-4 h-[62px] w-96 m-3 text-white'>
+            <div className='flex flex-row items-center '>
+              <Image
+                src={grievancelogoImage}
+                alt="dash"
+                width={30}
+              />
+              <p className='pl-2.5 text-lg'>Submeter Queixa</p>
+            </div>
+          </Link>
           <Link
-            href={'https://app.powerbi.com/view?r=eyJrIjoiYTg5OWNhNDItMTY2ZC00YTQ3LThlYWQtMGVkY2Q3OTNiMTkwIiwidCI6IjI2ZWY3ZmQyLTJhN2YtNDEzNS1hMmU0LWRlOWFjZjE2OGIyYSIsImMiOjF9&embedImagePlaceholder=true'}
+            href={'https://app.powerbi.com/view?r=eyJrIjoiMzMzYmVmYjctZTFiZi00NTMwLWJhNDYtZTkwMDQzZjZjYzgzIiwidCI6IjI2ZWY3ZmQyLTJhN2YtNDEzNS1hMmU0LWRlOWFjZjE2OGIyYSIsImMiOjF9&pageName=ReportSection'}
             rel="noopener noreferrer"
             className='rounded bg-[#0E0E0F] p-4 h-[62px] w-96 m-3 text-white'>
             <div className='flex flex-row items-center '>
@@ -68,19 +80,8 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link
-            href={'https://ee.humanitarianresponse.info/x/PrunVS3a/'}
-            className='rounded bg-[#4C4C4E] p-4 h-[62px] w-96 m-3 text-white'>
-            <div className='flex flex-row items-center '>
-              <Image
-                src={grievancelogoImage}
-                alt="dash"
-                width={30}
-              />
-              <p className='pl-2.5 text-lg'>Submeter Queixa</p>
-            </div>
-          </Link>
-          <button className='rounded bg-[#056839] p-4 h-[62px] w-96 m-3 text-white'>
+
+          {/* <button className='rounded bg-[#056839] p-4 h-[62px] w-96 m-3 text-white'>
             <div className='flex flex-row items-center '>
               <Image
                 src={learninglogoImage}
@@ -89,7 +90,7 @@ export default function Home() {
               />
               <p className='pl-2.5 text-lg'>Cursos de Salvaguarda Social/VBG</p>
             </div>
-          </button>
+          </button> */}
         </div>
 
         <div className='absolute bottom-0 grid grid-cols-2 bg-slate-50 font-bold'>
