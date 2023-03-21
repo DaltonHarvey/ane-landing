@@ -63,7 +63,7 @@ export default function Home() {
                 alt="dash"
                 width={30}
               />
-              <p className='pl-2.5 text-lg'>Submeter Queixa</p>
+              <p className='pl-2.5 text-lg'>Submeter Queixa/Reclamações/Sugestões</p>
             </div>
           </Link>
           <Link
