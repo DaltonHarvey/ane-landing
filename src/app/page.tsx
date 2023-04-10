@@ -21,7 +21,7 @@ export default function Home() {
 
         <div>
         <Image src={logoImage} alt="" width={100} />
-        <h1 className='py-6 font-black text-black text-5xl'>Mecanismo de Gestão de Queixas e Reclamações</h1>
+        <h1 className='py-6 font-black text-black text-4xl'>Mecanismo de Gestão de Queixas/Reclamações/Sugestões</h1>
 
         <div className='flex flex-row items-center'>
           {/* <div className='flex flex-row items-center rounded w-80 bg-[#202024] p-4'>
@@ -61,9 +61,9 @@ export default function Home() {
               <Image
                 src={grievancelogoImage}
                 alt="dash"
-                width={30}
+                width={40}
               />
-              <p className='pl-2.5 text-lg'>Submeter Queixa/Reclamação/Sugestão</p>
+              <p className='pl-2.5 text-[12]'>Submeter Queixa/Reclamação/Sugestão</p>
             </div>
           </Link>
           <Link
@@ -74,7 +74,7 @@ export default function Home() {
               <Image
                 src={dashboardgoImage}
                 alt="dash"
-                width={30}
+                width={35}
               />
               <p className='pl-2.5 text-lg'>Visualizar Dashboard</p>
             </div>
